@@ -1,0 +1,97 @@
+.tabs_inter
+    display: block
+    padding: 12px 0px
+    margin: 0px
+    li
+        border-right: 2px solid $blueGray
+        h3
+            color: $blueGray
+            text-transform: capitalize
+        &.active
+            border-right: 2px solid $blue
+            h3
+                color: $blue
+        &:last-child
+            border-right: none
+    &-content
+        display: none
+        &.active
+            display: block
+.tab
+    &-content
+        display: none
+        &.current
+            display: block
+    &s
+        .current
+            .title
+                color: $blue
+        .title
+            color: $gray
+.tabs
+    li
+        position: relative
+        &:after
+            content: ""
+            position: absolute
+            background-color: $gray
+            +MQ(S)
+                top: 0
+                right: 0
+                width: 1px
+                height: 100px
+        &:last-child
+            &:after
+                width: 0
+    li.current
+        .circle_site
+            +filter(grayscale(0%))
+            &--tab
+                +filter(grayscale(0%))
+    li.current:first-child
+        &:before
+            content: ""
+            width: 0
+            height: 0
+            border-left: 20px solid transparent
+            border-right: 20px solid transparent
+            border-bottom: 20px solid $blue
+            position: absolute
+            // bottom: -20px
+            left: -10px
+            top: 22px
+            +transform(rotate(90deg))
+            +MQ(S)
+                top: inherit
+                bottom: -20px
+                left: 45%
+                +transform(rotate(0deg))
+    li.current:nth-last-child(2)
+        &:before
+            content: ""
+            width: 0
+            height: 0
+            border-left: 20px solid transparent
+            border-right: 20px solid transparent
+            border-bottom: 20px solid $blue
+            position: absolute
+            // bottom: -20px
+            left: -10px
+            top: 23px
+            +transform(rotate(90deg))
+            +MQ(S)
+                bottom: -20px
+                left: 45%
+                top: inherit
+                +transform(rotate(0deg))
+    li.current:last-child
+        &:before
+            content: ""
+            width: 0
+            height: 0
+            border-left: 20px solid transparent
+            border-right: 20px solid transparent
+            border-bottom: 20px solid $blue
+            position: absolute
+            bottom: -20px
+            right: 45%

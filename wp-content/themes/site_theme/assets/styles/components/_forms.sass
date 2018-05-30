@@ -1,0 +1,65 @@
+
+fieldset
+    border: none
+.form_one
+    #{$all-text-inputs}
+        border-top: 2px solid transparent
+        border-left: 0px solid transparent
+        border-right: 0px solid transparent
+        border-bottom: 2px solid $blueLight
+        padding: .6em 1em
+        display: inline-block
+        margin-bottom: 12px
+        width: 100%
+        +transition(all 0.3s ease-in-out)
+        +placeholder
+            color: $darkGray
+            font-weight: 700
+        &:focus
+            outline-offset: 0px
+            outline: none
+            border-bottom: 2px solid $blue !important
+
+// Grid #fomulario one
+
+.form_one
+    #{$all-text-inputs}
+        &.min
+            width: 100%
+            +MQ(S)
+                width: 32.1%
+            +MQ(M)
+                width: 32.25%
+    #{$all-text-inputs}
+        &.middle
+            width: 100%
+            +MQ(S)
+                width: 48.9%
+            +MQ(M)
+                width: 49.25%
+    #{$all-text-inputs}
+        &.full
+            width: 100%
+//  Estados de formularios
+
+.form_one
+    #{$all-text-inputs}
+        &.succes
+            border-top: 2px solid transparent
+            border-left: 0px solid transparent
+            border-right: 0px solid transparent
+            border-bottom: 2px solid $green
+        &.alert
+            border-top: 2px solid transparent
+            border-left: 0px solid transparent
+            border-right: 0px solid transparent
+            border-bottom: 2px solid $red
+
+// titulos de fomulario o labels
+.form_one
+    label
+        display: block
+        &.radio,
+        &.checkbox
+            display: inline-block
+            padding-left: 9px

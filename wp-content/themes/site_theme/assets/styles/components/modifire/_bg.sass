@@ -1,0 +1,28 @@
+// background images
+.bgi
+    //images
+    &_item
+        background-position: center center
+        background-repeat: no-repeat
+        background-size: cover
+        &--cero
+            // background-image: url('/marsh/images/theme/bg-item-00.jpg')
+            // background-color: $white
+// background colors
+.bgc
+    &--white
+        background-color: $white
+    &--blue
+        background-color: $blue
+    &--gainsboro
+        background-color: $gainsboro
+    &--red
+        background-color: $red
+    &_rgba
+        &--white
+            background-color: rgba($white, 0.4)
+    &--blueLight
+        background-color: $blueLight
+.bg
+    &--gradient
+        +linear-gradient($white, rgba($silver, 0.25))

@@ -1,0 +1,43 @@
+.training
+    display: inline-block
+    &_img
+        width: 400px
+        min-height: 25vh
+        background-position: center center
+        background-size: 100%
+        background-repeat: no-repeat
+        border: 4px solid $gainsboro
+.box
+    &_next
+        &--img
+            width: 100%
+            min-height: 135px
+            background-position: center center
+            background-size: 100%
+            background-repeat: no-repeat
+            border: 4px solid $gainsboro
+            display: inline-block
+            +MQ(M)
+                width: 342px
+                min-height: 200px
+            +MQ(L)
+                width: 400px
+        .content
+            width: 100%
+            +MQ(M)
+                width: 56%
+            +MQ(L)
+                width: 58%
+            .paragraf
+                max-height: 75px
+                min-height: 80px
+                overflow: scroll
+.box
+    &_intro
+        &--img
+            width: 100%
+            min-height: 35vh
+            background-position: center center
+            background-size: cover
+            background-repeat: no-repeat
+

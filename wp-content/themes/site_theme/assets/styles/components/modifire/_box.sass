@@ -1,0 +1,104 @@
+.box
+    &_circle
+        &--float
+            position: absolute
+            top: -145px
+            left: 4%
+            right: 25%
+            width: 100%
+            +MQ(M)
+                top: -200px
+                left: 0%
+                right: 25%
+    &_shadow
+        box-shadow: 0 1px 1px rgba($black, .05)
+    &_posa
+        position: absolute
+    &_posr
+        position: relative
+    &_inblock
+        display: inline-block
+    &_block
+        display: block
+    &_bdrz
+        &--x
+            &12
+                border-radius: 12px
+    &_pd
+        &--x
+            &5
+                padding: 5px
+            &10
+                padding: 10px
+            &20
+                padding: 20px
+            &30
+                padding: 30px
+
+.box
+    &_arrow
+        &--red
+            position: relative
+            &:after
+                @media (min-width: 479px)
+                    content: ""
+                    width: 0
+                    height: 0
+                    border-style: solid
+                    // border-color: transparent transparent transparent $red
+                    position: absolute
+                    top: 0
+                    right: -11px
+                    border-width: 32px 0 41px 11px
+.box
+    &_content
+        &--form
+            //
+.box
+    &_color
+        position: relative
+        width: 100%
+        padding: 50% 0
+        margin-bottom: 12px
+        &.bgc--blue
+            &:after,
+            &:before
+                content: ""
+                position: absolute
+                bottom: 0
+                width: 50%
+                height: 20%
+            &:after
+                background-color: $blueDark
+                right: 0
+            &:before
+                background-color: $blueLight
+                left: 0
+        &.bgc--red
+            &:after,
+            &:before
+                content: ""
+                position: absolute
+                bottom: 0
+                width: 50%
+                height: 20%
+            &:after
+                background-color: $redDark
+                right: 0
+            &:before
+                background-color: $redLight
+                left: 0
+        &.bgc--gainsboro
+            &:after,
+            &:before
+                content: ""
+                position: absolute
+                bottom: 0
+                width: 50%
+                height: 20%
+            &:after
+                background-color: $white
+                right: 0
+            &:before
+                background-color: $lightGray
+                left: 0

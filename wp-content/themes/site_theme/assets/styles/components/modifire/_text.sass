@@ -1,0 +1,65 @@
+.title,
+.subtitle,
+.paragraf
+    display: block
+
+//.tag_data
+.txt
+    &_italic
+        font-style: italic
+    &_center
+        text-align: center
+    &_upper
+        text-transform: uppercase
+    &_capital
+        text-transform: capitalize
+    &_right
+        text-align: right
+    &_size
+        &--x
+            &12
+                font-size: 12px
+                +heading
+                    font-size: 12px
+            &20
+                font-size: 20px
+                +heading
+                    font-size: 20px
+            &25
+                font-size: 25px
+                +heading
+                    font-size: 25px
+            &30
+                font-size: 30px
+                +heading
+                    font-size: 30px
+            &35
+                font-size: 35px
+                +heading
+                    font-size: 35px
+            &40
+                font-size: 40px
+                +heading
+                    font-size: 40px
+            &50
+                font-size: 50px
+                +heading
+                    font-size: 50px
+            &60
+                font-size: 60px
+                +heading
+                    font-size: 60px
+            &70
+                font-size: 70px
+                +heading
+                    font-size: 70px
+.list-inline
+    padding-left: 0
+    margin-left: -5px
+    list-style: none
+    &>li
+        display: inline-block
+        padding-right: 25px
+        padding-left: 25px
+        a
+            text-decoration: none

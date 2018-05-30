@@ -1,0 +1,90 @@
+.list
+    &_style
+        &--none
+            list-style: none
+    &_logo
+        li
+            vertical-align: top !important
+            margin-bottom: 12px
+    &_color
+        li
+            margin-bottom: 12px
+            width: 19%
+    &_children
+        li
+            padding: 12px
+            @media (min-width: 640px) and (max-width: 900px)
+                width: 32%
+        li:first-child
+            width: 100%
+            padding: 0px
+    &--center
+        margin: 0 auto
+    &--line
+        list-style: none
+    &--inline
+        padding-right: 0px
+        padding-left: 0px
+        margin-left: 0px
+        list-style: none
+        vertical-align: middle
+        position: relative
+        &>li
+            display: inline-block
+            padding-left: 10px
+            padding-right: 10px
+            vertical-align: middle
+            position: relative
+            z-index: 19
+    &_products
+        &>li
+            &:last-child
+                @media (min-width: 768px)
+                    width: 530px
+                    text-align: left
+    &_question--title
+        li
+            width: 49%
+    &_radio
+        &--xs
+            li
+                @media (min-width: 0px)
+                    width: 100%
+                @media (min-width: 768px)
+                    width: auto
+        p
+            @media (min-width: 0px) and (max-width: 450px)
+                font-size: 12px
+            @media (min-width: 451px) and (max-width: 669px)
+                font-size: 15px
+        &:after
+            content: ""
+            width: 100%
+            height: 2px
+            display: block
+            position: relative
+            top: -10px
+            z-index: 0
+        &--white
+            p
+                @media (min-width: 0px) and (max-width: 450px)
+                    font-size: 12px
+                @media (min-width: 451px) and (max-width: 669px)
+                    font-size: 15px
+            &:after
+                content: ""
+                width: 100%
+                height: 2px
+                background-color: $white
+                display: block
+                position: relative
+                top: -10px
+                z-index: 0
+        &--none
+            p
+                @media (min-width: 0px) and (max-width: 450px)
+                    font-size: 12px
+                @media (min-width: 451px) and (max-width: 669px)
+                    font-size: 15px
+
+
