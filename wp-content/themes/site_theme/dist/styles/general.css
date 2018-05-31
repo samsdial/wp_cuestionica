@@ -638,7 +638,7 @@ ul.social-list li {
 .profile{}
 @media(min-width: 0px) and (max-width: 768px){
     .profile{
-        min-height: 450px;
+        min-height: 297px;
     }
 }
 .navbar-dark .navbar-toggler-icon {
@@ -681,18 +681,55 @@ section.vertex_white.bottom:after {
     display: inline-block;
     z-index: 1;
 }
-section.vertex_white.top:before {
-    content: "";
-    position: absolute;
-    top: -47px;
-    left: -10%;
-    width: 120%;
-    height: 231px;
-    background: white;
-    transform: rotate(-3deg);
-    display: inline-block;
-    z-index: 1;
+
+@media screen and (min-width: 0px) {
+    section.vertex_white.bottom:after {
+        content: "";
+        position: absolute;
+        bottom: -47px;
+        left: 0%;
+        width: 100%;
+        height: 231px;
+        background: white;
+        transform: rotate(0deg);
+        display: inline-block;
+        z-index: 1;
+    }
 }
+@media screen and (min-width: 768px) {
+    section.vertex_white.bottom:after {
+        content: "";
+        position: absolute;
+        left: -10%;
+        width: 120%;
+        transform: rotate(-3deg);
+    }
+}
+
+
+@media screen and (min-width: 0px) {
+    section.vertex_white.top:before {
+        content: "";
+        position: absolute;
+        top: -47px;
+        left: 0%;
+        width: 100%;
+        height: 231px;
+        background: white;
+        transform: rotate(0deg);
+        display: inline-block;
+        z-index: 1;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    section.vertex_white.top:before {
+        left: -10%;
+        width: 120%;
+        transform: rotate(-3deg);
+    }
+}
+
 .clients,
 .ejes{
     position: relative;
@@ -777,7 +814,7 @@ ul.social-list li:last-child{
         position: relative;
         display: block;
         width: auto;
-        top: 172px;
+        top: 120px;
         bottom: 0px;
         left: auto;
     }
@@ -889,7 +926,7 @@ ul.list_clientes_cours {
     height: 190px;
 }
 .home__intro__logo{
-    padding: 55px 145px;
+    padding: 55px 127px;
 }
 .overlay{
     left: -450px;
