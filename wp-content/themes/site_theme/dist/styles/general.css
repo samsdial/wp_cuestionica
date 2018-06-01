@@ -617,9 +617,9 @@ button.slick-next.slick-arrow {
 ul.social-list li {
     vertical-align: middle;
 }
-.program-text{
+/*.program-text{
     padding: 145px 22px;
-}
+}*/
 
 @media (max-width: 519px){
     .program-text{
@@ -940,3 +940,32 @@ ul.list_clientes_cours {
 .head-social_list li:last-child{
     padding-top: 2px;
 }
+
+@media  screen and (min-width: 0px){
+    .program-text{
+        width: 100%;
+    }
+    .program-text .paragraf{
+        color: #1b1464;
+        font-size: 22px;
+        line-height: 1.2;
+        width: 100%;
+    }
+}
+@media  screen and (min-width: 768px){
+    .program-text{
+        background-image: url(../img/bg-title_program.png);
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 100%;
+        width: 540px;
+        height: 342px;
+        padding: 68px;
+    }
+    .program-text .paragraf{
+        overflow: auto;
+        width: 416px;
+        height: 226px;
+    }
+}
+

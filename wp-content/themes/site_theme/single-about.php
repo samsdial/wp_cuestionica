@@ -15,8 +15,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 col-md-12 col-sm-12 program-content">
-                    <div class="text-center program-text title_font_site">
-                        <?php echo get_field('slogan')?>
+                    <div class=" program-text ">
+                        <div class="paragraf text-center title_font_site">
+                            <?php echo get_field('slogan')?>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xl-6 col-md-12 col-sm-12 program-img">
