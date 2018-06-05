@@ -968,4 +968,6 @@ ul.list_clientes_cours {
         height: 226px;
     }
 }
-
+.list-inline{
+    margin-bottom: 0px;
+}

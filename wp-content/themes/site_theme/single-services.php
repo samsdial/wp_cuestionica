@@ -255,3 +255,46 @@
         ?>
     </ul>
 </section>
+<div class="themes-work">
+    <div class="container">
+        <div class="row mb30">
+            <div class="col mt40">
+                <div class="box_theme_work text-center ">
+                    <div class="themes-work_title title_after circle">
+                        <span>
+                        <?php echo get_field('titulo_trabajo'); ?>
+                        </span>
+                    </div>
+                    <div class="subtitulo cviolet s20" style="margin-left: 113px;">
+                        <?php echo get_field('subtitulo_trabajo'); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-12">
+            <ul class="list-inline js_themes">
+
+                <?php
+                if( have_rows('items_trabajo') ):
+
+                    while ( have_rows('items_trabajo') ) : the_row();?>
+                        <li>
+                            <div class="mb40 text-center">
+                                <img src="<?php echo the_sub_field('items_trabajo_images');?>" alt="">
+                            </div>
+                        </li>
+                    <?php endwhile;
+
+                else :
+
+                    // NO hay INFO
+
+                endif;
+
+                ?>
+            </ul>
+        </div>
+    </div>
+</div>
